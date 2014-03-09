@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-lg-1">
+    <a href="<%= offers_crawl_url %>" class="btn btn-success">Crawl</a>
+  </div>
+  <div class="col-lg-3 offers-count">
+    <%= @offers.length %> Offers
+  </div>
+</div>
+<div class="row">
+  <% @offers.each do |offer| %>
+    <%=  render partial: "offer", locals: {offer: offer} %>
+  <% end %>
+</div>
