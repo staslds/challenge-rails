@@ -27,6 +27,20 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+#A simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete.
+#read more: https://github.com/rest-client/rest-client
+gem "rest-client", "~> 1.6.7"
+
+#Nokogiri (é¸) is an HTML, XML, SAX, and Reader parser
+#read more: https://github.com/sparklemotion/nokogiri
+gem "nokogiri", "~> 1.6.1"
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem "capybara", "~> 2.2.1"
+  gem "database_cleaner", "~> 1.2.0"
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
