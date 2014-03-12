@@ -8,9 +8,13 @@
 
 .coupon {
   border: 1px solid #bbb;
-  margin-top: 10px;
-  padding-bottom:15px;
+  margin: 10px 10px 0;
+  word-wrap: break-word;
   position: relative; 
+
+  .controls {
+    overflow: hidden;
+  }
 }
 
 .merchant-label {
